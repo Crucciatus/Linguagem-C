@@ -38,7 +38,7 @@ void mostraratividades(){
 	fclose(PointerFile);
 	system("pause");
 }
-
+ int value = 0;
 int quantidadeatividades(){
 	
 	int Contador = 0;
@@ -67,7 +67,7 @@ int main(){
 		printf("2. Mostrar atividades cadastradas\n");
 		printf("3. Quantidade de atividades cadastradas\n");
 		printf("4. Sair\n");
-		printf("Digite a opção desejada: ");
+		printf("Digite a opï¿½ï¿½o desejada: ");
 		scanf("%d", &Option);
 		system("cls");
 		if(Option == 1){
@@ -78,11 +78,11 @@ int main(){
 		}
 		else if(Option == 3){
 			Contador = quantidadeatividades();
-			printf("%d atividades estão cadastradas na sua lista.\n", Contador);
+			printf("%d atividades estï¿½o cadastradas na sua lista.\n", Contador);
 			system("pause");
 		}
 		else if(Option != 4){
-			printf("Digite uma opção válida!\n");
+			printf("Digite uma opï¿½ï¿½o vï¿½lida!\n");
 			system("pause");
 		}
 		

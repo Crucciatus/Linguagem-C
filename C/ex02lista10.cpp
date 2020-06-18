@@ -8,7 +8,7 @@
 void lervetor(float Vetor[]){
 	
 	for(int i = 0; i < VALUE; i++){
-		printf("Digite o salario do %dº funcionário: ", i+1);
+		printf("Digite o salario do %dï¿½ funcionï¿½rio: ", i+1);
 		scanf("%f", &Vetor[i]);
 	}
 }
@@ -25,6 +25,7 @@ int busca(float Salarios[], float *PointerConsulta){
 	
 	return Consulta;
 }
+int value = 0;
 
 int main(){
 	
@@ -37,7 +38,7 @@ int main(){
 	printf("Digite o salario que deseja consultar: ");
 	scanf("%f", &SalarioConsulta);
 	Consulta = busca(Salarios, &SalarioConsulta);
-	printf("Indice do salário %.2f: %d", SalarioConsulta, Consulta);
+	printf("Indice do salï¿½rio %.2f: %d", SalarioConsulta, Consulta);
 	
 	return 0;
 }
